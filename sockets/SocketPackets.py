@@ -12,7 +12,7 @@ def main(Remote_IP):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         sock.connect((Remote_IP, Remote_PORT))
-        start_task(sock, "Thx for accepting!!!");
+        start_task(sock, "Thx for accepting!!!")
     except socket.error:
         start_server()
 
